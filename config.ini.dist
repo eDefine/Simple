@@ -1,0 +1,33 @@
+[application]
+environment = development
+
+[system]
+password = system_password
+
+[database]
+host = localhost
+port = 3306
+name = framework
+user = framework
+password = framework_password
+
+[memcached]
+host = localhost
+port = 11211
+
+[routing]
+default_controller = home
+default_action = index
+
+[mail]
+host = smtp.gmail.com
+port = 465
+secure = ssl
+user = noreply@edefine.pl
+password = edefine_password
+from_email = noreply@edefine.pl
+from_name = Edefine Framework
+testing_email = patryksyc@gmail.com
+
+[wkhtmltopdf]
+binary = bin/wkhtmltopdf-static

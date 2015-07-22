@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form action="{{ path('profile', 'edit') }}" method="post" enctype="multipart/form-data">
+        <div>
+            <label>First Name</label>
+            {{ form_input(profileForm.get('firstName')) }}
+        </div>
+        <div>
+            <label>Last Name</label>
+            {{ form_input(profileForm.get('lastName')) }}
+        </div>
+        <div>
+            <label>Email</label>
+            {{ form_input(profileForm.get('email')) }}
+        </div>
+        <div>
+            <label>Picture</label>
+            {{ form_input(profileForm.get('picture')) }}
+        </div>
+        <div>
+            <button type="submit">Save</button>
+        </div>
+    </form>
+{% endblock %}

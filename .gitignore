@@ -1,0 +1,8 @@
+.idea
+*~
+/vendor/
+/log/
+/tmp/
+/public/uploads/
+
+config.ini

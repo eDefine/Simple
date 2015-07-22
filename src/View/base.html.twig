@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edefine Framework</title>
+
+        <meta charset="utf-8" />
+        <link href="/css/main.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="/img/favicon.ico" />
+
+        <script src="/js/main.js"></script>
+        {% block scripts %}{% endblock %}
+    </head>
+    <body>
+        <h1>eDefine Framework</h1>
+        <ul>
+            <li><a href="{{ path('home', 'index') }}">Home</a></li>
+            {% if user %}
+                <li><a href="{{ path('profile', 'view') }}">Profile</a></li>
+                <li><a href="{{ path('security', 'logout') }}">Logout</a></li>
+            {% else %}
+                <li><a href="{{ path('security', 'login') }}">Login</a></li>
+            {% endif %}
+        </ul>
+        {% for messageType in ['success', 'info', 'warning', 'error'] %}
+            {% for flashMessage in flash(messageType) %}
+                <div>
+                    {{ messageType }}! {{ flashMessage }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+        {% block body %}{% endblock %}
+    </body>
+</html>

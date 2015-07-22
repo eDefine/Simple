@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if user %}
+        <h1>Hello, {{ user }}!</h1>
+        <h2>Your roles:</h2>
+        <ul>
+            {% for role in user.roles %}
+                <li>{{ role }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <h1>Hello, Anonymous!</h1>
+    {% endif %}
+{% endblock %}

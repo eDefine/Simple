@@ -1,0 +1,15 @@
+{
+    "name": "edefine/simple",
+    "authors": [
+        {
+            "name": "Patryk Syc",
+            "email": "patryk@edefine.pl"
+        }
+    ],
+    "require": {
+        "edefine/framework": "0.1.*"
+    },
+    "autoload": {
+        "psr-4": {"": "src/"}
+    }
+}

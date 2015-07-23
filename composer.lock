@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ab6d0b392c424ae6e8ee6b0bf0f95cc3",
+    "hash": "bcc89b28ea96c4cf739a7a255a3f6e7d",
     "packages": [
         {
             "name": "edefine/framework",
-            "version": "v0.1.5",
+            "version": "v0.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eDefine/Framework.git",
-                "reference": "f35510f31797e8656e8755ffd1387a389227faf8"
+                "reference": "1889ce220a606e61a32dbe1bfcb90ca582f104a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eDefine/Framework/zipball/f35510f31797e8656e8755ffd1387a389227faf8",
-                "reference": "f35510f31797e8656e8755ffd1387a389227faf8",
+                "url": "https://api.github.com/repos/eDefine/Framework/zipball/1889ce220a606e61a32dbe1bfcb90ca582f104a2",
+                "reference": "1889ce220a606e61a32dbe1bfcb90ca582f104a2",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,7 @@
                     "email": "patryk@edefine.pl"
                 }
             ],
-            "time": "2015-07-07 10:13:57"
+            "time": "2015-07-23 06:41:51"
         },
         {
             "name": "phpmailer/phpmailer",

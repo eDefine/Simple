@@ -11,6 +11,8 @@ $container = \DependencyInjection::initContainer();
 $application = new \Edefine\Framework\Console\Application($container);
 
 $application->addJob(new \Edefine\Framework\Console\ContainerList());
+$application->addJob(new \Edefine\Framework\Console\DatabaseCreate());
+$application->addJob(new \Edefine\Framework\Console\DatabaseDrop());
 $application->addJob(new \Edefine\Framework\Console\FixturesLoad());
 
 $application->addJob(new \Console\HelloWorld());

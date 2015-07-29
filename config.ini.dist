@@ -1,5 +1,6 @@
 [application]
 environment = development
+domain = simple.local
 
 [system]
 password = system_password

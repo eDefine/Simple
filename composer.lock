@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "edefine/framework",
-            "version": "v0.1.6",
+            "version": "v0.1.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eDefine/Framework.git",
-                "reference": "1889ce220a606e61a32dbe1bfcb90ca582f104a2"
+                "reference": "c8899da7ba82f52fa924f72f4dc9524c8445f66b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eDefine/Framework/zipball/1889ce220a606e61a32dbe1bfcb90ca582f104a2",
-                "reference": "1889ce220a606e61a32dbe1bfcb90ca582f104a2",
+                "url": "https://api.github.com/repos/eDefine/Framework/zipball/c8899da7ba82f52fa924f72f4dc9524c8445f66b",
+                "reference": "c8899da7ba82f52fa924f72f4dc9524c8445f66b",
                 "shasum": ""
             },
             "require": {
@@ -37,7 +37,7 @@
                     "email": "patryk@edefine.pl"
                 }
             ],
-            "time": "2015-07-23 06:41:51"
+            "time": "2015-08-07 06:08:59"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -96,16 +96,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.18.2",
+            "version": "v1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602"
+                "reference": "edbeaf43b0a606cdaadc32a11d2673614a377b90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e8e6575abf6102af53ec283f7f14b89e304fa602",
-                "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/edbeaf43b0a606cdaadc32a11d2673614a377b90",
+                "reference": "edbeaf43b0a606cdaadc32a11d2673614a377b90",
                 "shasum": ""
             },
             "require": {
@@ -114,7 +114,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.18-dev"
+                    "dev-master": "1.19-dev"
                 }
             },
             "autoload": {
@@ -149,7 +149,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-06-06 23:31:24"
+            "time": "2015-07-31 13:45:26"
         }
     ],
     "packages-dev": [],

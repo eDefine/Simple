@@ -7,6 +7,6 @@ define('APP_DIR', dirname(__DIR__));
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 
-$container = \DependencyInjection::initContainer();
+$container = DependencyInjection::initContainer();
 $bootstrap = new Edefine\Framework\Bootstrap($container);
 $bootstrap->run();

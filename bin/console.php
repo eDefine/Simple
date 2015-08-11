@@ -7,14 +7,12 @@ define('APP_DIR', dirname(__DIR__));
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 
-$container = \DependencyInjection::initContainer();
-$application = new \Edefine\Framework\Console\Application($container);
+$container = DependencyInjection::initContainer();
+$application = new Edefine\Framework\Console\Application($container);
 
-$application->addJob(new \Edefine\Framework\Console\ContainerList());
-$application->addJob(new \Edefine\Framework\Console\DatabaseCreate());
-$application->addJob(new \Edefine\Framework\Console\DatabaseDrop());
-$application->addJob(new \Edefine\Framework\Console\FixturesLoad());
+$application->addJob(new Edefine\Framework\Console\ContainerList());
+$application->addJob(new Edefine\Framework\Console\FixturesLoad());
 
-$application->addJob(new \Console\HelloWorld());
+$application->addJob(new Console\HelloWorld());
 
 $application->run();

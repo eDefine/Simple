@@ -28,6 +28,12 @@ if [ $install ]; then
     composer install
 fi
 
+echo "Purging log, tmp and uploads directory"
+echo $system_password | sudo -S -p "" rm -rf log/* tmp/* public/uploads/*
+
+echo "Recreating database"
+mysql -u $database_user -p$database_password -e "DROP DATABASE IF EXISTS $database_name; CREATE DATABASE $database_name;"
+
 echo "Loading initial database"
 mysql -u $database_user -p$database_password $database_name < sql/init.sql
 

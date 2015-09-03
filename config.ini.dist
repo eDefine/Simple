@@ -11,6 +11,7 @@ port = 3306
 name = framework
 user = framework
 password = framework_password
+log_queries = 1
 
 [memcached]
 host = localhost

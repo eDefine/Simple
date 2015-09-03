@@ -65,7 +65,7 @@ class ServiceFactory
     {
         if (!isset($this->services['database'])) {
             $config = $this->getConfig();
-            if ($config->get('application.environment') == 'development') {
+            if ($config->get('database.log_queries')) {
                 $databaseLogger = new Writer(sprintf('%s/log/database.log', APP_DIR));
                 $connection = new Database\LoggedConnection($config, $databaseLogger);
             } else {

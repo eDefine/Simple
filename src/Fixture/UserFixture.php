@@ -5,7 +5,7 @@ namespace Fixture;
 use Edefine\Framework\Fixture\AbstractFixture;
 use Entity\User;
 
-class UserFixture extends  AbstractFixture
+class UserFixture extends AbstractFixture
 {
     const USERS_TO_CREATE = 3;
 

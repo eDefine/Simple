@@ -12,5 +12,6 @@ CREATE TABLE `user` (
   `created` DATETIME NOT NULL,
   `lastActivity` DATETIME NULL,
   `pictureName` VARCHAR(255) NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  UNIQUE (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

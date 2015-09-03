@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bcc89b28ea96c4cf739a7a255a3f6e7d",
+    "hash": "974f81153e257be1d24b28fa7fee4de3",
     "packages": [
         {
             "name": "edefine/framework",
-            "version": "v0.1.20",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eDefine/Framework.git",
-                "reference": "c8899da7ba82f52fa924f72f4dc9524c8445f66b"
+                "reference": "e9045c86ff2928a382b0390197cb9fb9fb61145d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eDefine/Framework/zipball/c8899da7ba82f52fa924f72f4dc9524c8445f66b",
-                "reference": "c8899da7ba82f52fa924f72f4dc9524c8445f66b",
+                "url": "https://api.github.com/repos/eDefine/Framework/zipball/e9045c86ff2928a382b0390197cb9fb9fb61145d",
+                "reference": "e9045c86ff2928a382b0390197cb9fb9fb61145d",
                 "shasum": ""
             },
             "require": {
@@ -37,20 +37,20 @@
                     "email": "patryk@edefine.pl"
                 }
             ],
-            "time": "2015-08-07 06:08:59"
+            "time": "2015-09-03 20:00:26"
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v5.2.10",
+            "version": "v5.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "07005ecbb80d11ec8c0f067bb37e8909cc7fcbb7"
+                "reference": "5dd754112d07ab7480824c2916689ce06f83a842"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/07005ecbb80d11ec8c0f067bb37e8909cc7fcbb7",
-                "reference": "07005ecbb80d11ec8c0f067bb37e8909cc7fcbb7",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/5dd754112d07ab7480824c2916689ce06f83a842",
+                "reference": "5dd754112d07ab7480824c2916689ce06f83a842",
                 "shasum": ""
             },
             "require": {
@@ -60,10 +60,15 @@
                 "phpdocumentor/phpdocumentor": "*",
                 "phpunit/phpunit": "4.3.*"
             },
+            "suggest": {
+                "league/oauth2-client": "Needed for Gmail's XOAUTH2 authentication system"
+            },
             "type": "library",
             "autoload": {
                 "classmap": [
                     "class.phpmailer.php",
+                    "class.phpmaileroauth.php",
+                    "class.oauth.php",
                     "class.smtp.php",
                     "class.pop3.php",
                     "extras/EasyPeasyICS.php",
@@ -92,29 +97,33 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2015-05-04 12:37:21"
+            "time": "2015-09-02 10:40:37"
         },
         {
             "name": "twig/twig",
-            "version": "v1.19.0",
+            "version": "v1.21.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "edbeaf43b0a606cdaadc32a11d2673614a377b90"
+                "reference": "ca8d3aa90b6a01c82e07909fe815d6b443e75a23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/edbeaf43b0a606cdaadc32a11d2673614a377b90",
-                "reference": "edbeaf43b0a606cdaadc32a11d2673614a377b90",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
+                "reference": "ca8d3aa90b6a01c82e07909fe815d6b443e75a23",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.7"
             },
+            "require-dev": {
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~2.7"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.19-dev"
+                    "dev-master": "1.21-dev"
                 }
             },
             "autoload": {
@@ -149,7 +158,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-07-31 13:45:26"
+            "time": "2015-08-26 08:58:31"
         }
     ],
     "packages-dev": [],

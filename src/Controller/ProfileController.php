@@ -9,7 +9,7 @@ class ProfileController extends AbstractController
     public function viewAction()
     {
         if (!$this->getUser()) {
-            $this->getContainer()->get('flashBag')->add('error', 'You must be logged to view this section.');
+            $this->getServiceFactory()->getFlashBag()->add('error', 'You must be logged to view this section.');
             return $this->redirect($this->getPath('home', 'index'));
         }
 
@@ -21,7 +21,7 @@ class ProfileController extends AbstractController
         $user = $this->getUser();
 
         if (!$user) {
-            $this->getContainer()->get('flashBag')->add('error', 'You must be logged to view this section.');
+            $this->getServiceFactory()->getFlashBag()->add('error', 'You must be logged to view this section.');
             return $this->redirect($this->getPath('home', 'index'));
         }
 
@@ -39,9 +39,9 @@ class ProfileController extends AbstractController
                 $user->setPictureName($pictureName);
             }
 
-            $this->getContainer()->get('manager')->save($user);
+            $this->getServiceFactory()->getEntityManager()->save($user);
 
-            $this->getContainer()->get('flashBag')->add('success', 'Profile has been saved.');
+            $this->getServiceFactory()->getFlashBag()->add('success', 'Profile has been saved.');
             return $this->redirect($this->getPath('profile', 'view'));
         }
 

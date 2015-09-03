@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "edefine/framework": "0.1.*"
+        "edefine/framework": "0.2.*"
     },
     "autoload": {
         "psr-4": {"": "src/"}

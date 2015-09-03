@@ -17,7 +17,7 @@ class SecurityController extends AbstractController
         if ($this->getParam('login')) {
             $loginForm->bindRequest($this->getRequest());
 
-            $user = $this->getContainer()->get('loginHandler')->login($loginObject);
+            $user = $this->getServiceFactory()->getLoginHandler()->login($loginObject);
 
             if ($user) {
                 return $this->redirect($this->getPath('home', 'index'));
@@ -31,7 +31,7 @@ class SecurityController extends AbstractController
 
     public function logoutAction()
     {
-        $this->getContainer()->get('loginHandler')->logout();
+        $this->getServiceFactory()->getLoginHandler()->logout();
 
         return $this->redirect($this->getPath('home', 'index'));
     }

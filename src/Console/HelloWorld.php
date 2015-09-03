@@ -2,11 +2,11 @@
 
 namespace Console;
 
-use Edefine\Framework\Console\AbstractJob;
+use Edefine\Framework\Console\JobInterface;
 use Edefine\Framework\Console\Input\InputInterface;
 use Edefine\Framework\Console\Output\OutputInterface;
 
-class HelloWorld extends AbstractJob
+class HelloWorld implements JobInterface
 {
     public function getName()
     {

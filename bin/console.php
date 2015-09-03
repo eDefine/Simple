@@ -7,10 +7,8 @@ define('APP_DIR', dirname(__DIR__));
 
 require_once(__DIR__ . '/../vendor/autoload.php');
 
-$container = DependencyInjection::initContainer();
-$application = new Edefine\Framework\Console\Application($container);
+$application = new Edefine\Framework\Console\Application();
 
-$application->addJob(new Edefine\Framework\Console\ContainerList());
 $application->addJob(new Edefine\Framework\Console\FixturesLoad());
 
 $application->addJob(new Console\HelloWorld());

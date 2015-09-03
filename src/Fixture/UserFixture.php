@@ -16,8 +16,7 @@ class UserFixture extends AbstractFixture
 
     public function load()
     {
-        /** @var \Edefine\Framework\ORM\EntityManager $manager */
-        $manager = $this->getContainer()->get('manager');
+        $manager = \ServiceFactory::getInstance()->getEntityManager();
 
         $admin = $this->createAdmin('FirstName', 'LastName', 'email@address.com', 'password');
         $manager->save($admin);

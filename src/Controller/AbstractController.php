@@ -14,7 +14,7 @@ class AbstractController extends BaseAbstractController
             return null;
         }
 
-        $user = $this->getContainer()->get('userRepository')->findOneById($userId);
+        $user = \ServiceFactory::getInstance()->getUserRepository()->findOneById($userId);
 
         return $user;
     }

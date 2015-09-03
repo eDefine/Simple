@@ -5,7 +5,7 @@ CREATE TABLE `user` (
   `email` VARCHAR(255) NOT NULL,
   `password` VARCHAR(255) NOT NULL,
   `salt` VARCHAR(32) NOT NULL,
-  `session` VARCHAR(255),
+  `session` VARCHAR(255) NULL,
   `roles` VARCHAR(255) NOT NULL,
   `created` DATETIME NOT NULL,
   `lastActivity` DATETIME NULL,

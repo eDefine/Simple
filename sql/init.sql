@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS `user`;
-
 CREATE TABLE `user` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `firstName` VARCHAR(255) NOT NULL,

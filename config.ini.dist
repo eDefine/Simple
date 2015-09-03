@@ -24,11 +24,11 @@ default_action = index
 host = smtp.gmail.com
 port = 465
 secure = ssl
-user = noreply@edefine.pl
-password = edefine_password
-from_email = noreply@edefine.pl
+user = email@gmail.com
+password = email_password
+from_email = email@gmail.com
 from_name = Edefine Framework
-testing_email = patryksyc@gmail.com
+testing_email = recipient@gmail.com
 
 [wkhtmltopdf]
 binary = bin/wkhtmltopdf-static
